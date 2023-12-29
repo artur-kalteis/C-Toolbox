@@ -1,0 +1,7 @@
+{
+    "slave_par_cmd": 3,
+    "bool_sync_cmd_open": false,
+    "bool_sync_cmd_close_deadbus": false,
+    "bool_sync_cmd_close_livebus": false,
+    "bool_LED_detect": false
+  }

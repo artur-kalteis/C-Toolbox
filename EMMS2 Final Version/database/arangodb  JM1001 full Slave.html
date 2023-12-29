@@ -1,0 +1,424 @@
+Parameter Master
+
+
+{
+  "slave_count": 1,
+  "slave_topology": [
+    {
+      "in16_slave_id": "jm_01",
+      "in16_par_slave_position": 1,
+      "char_par_slave_name": "JM1001",
+      "in16_par_dig_in": 0,
+      "in16_par_dig_out": 0,
+      "in16_par_ana_in": 36,
+      "in16_par_ana_out": 11,
+      "bool_par_serialized": true,
+      "in16_par_slave_datasets": 8
+    }
+  ]
+}
+
+
+Parameter Slave
+
+{
+  "slave_par_output": [
+    {
+      "in16_par_data_output": 1,
+      "in16_par_addr_output": 2,
+      "in16_par_cmd_output": 3,
+      "data": 2,
+      "ui16_i_L1_norm": 88,
+      "ui16_i_L1N_norm": 99,
+      "cmd": 2,
+      "bool_JM_cmd_read": false,
+      "bool_JM_cmd_write": true
+    }
+  ],
+  "slave_par_datasets": [
+    {
+      "no": 0,
+      "in16_par_addr_var_output": 4,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 0,
+      "bool_par_cmd_interrupt": 8,
+      "in16_par_data_input": 11,
+      "in16_par_addr_input": 12,
+      "in16_par_status_input": 13,
+      "in16_par_time_input": 14
+    },
+    {
+      "no": 1,
+      "in16_par_addr_var_output": 5,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 1,
+      "bool_par_cmd_interrupt": 9,
+      "in16_par_data_input": 15,
+      "in16_par_addr_input": 16,
+      "in16_par_status_input": 17,
+      "in16_par_time_input": 18
+    },
+    {
+      "no": 2,
+      "in16_par_addr_var_output": 6,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 2,
+      "bool_par_cmd_interrupt": 10,
+      "in16_par_data_input": 19,
+      "in16_par_addr_input": 20,
+      "in16_par_status_input": 21,
+      "in16_par_time_input": 22
+    },
+    {
+      "no": 3,
+      "in16_par_addr_var_output": 7,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 3,
+      "bool_par_cmd_interrupt": 11,
+      "in16_par_data_input": 23,
+      "in16_par_addr_input": 24,
+      "in16_par_status_input": 25,
+      "in16_par_time_input": 26
+    },
+    {
+      "no": 4,
+      "in16_par_addr_var_output": 8,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 4,
+      "bool_par_cmd_interrupt": 12,
+      "in16_par_data_input": 27,
+      "in16_par_addr_input": 31,
+      "in16_par_status_input": 32,
+      "in16_par_time_input": 33
+    },
+    {
+      "no": 5,
+      "in16_par_addr_var_output": 8,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 5,
+      "bool_par_cmd_interrupt": 13,
+      "in16_par_data_input": 28,
+      "in16_par_addr_input": 31,
+      "in16_par_status_input": 32,
+      "in16_par_time_input": 33
+    },
+    {
+      "no": 6,
+      "in16_par_addr_var_output": 8,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 6,
+      "bool_par_cmd_interrupt": 14,
+      "in16_par_data_input": 29,
+      "in16_par_addr_input": 31,
+      "in16_par_status_input": 32,
+      "in16_par_time_input": 33
+    },
+    {
+      "no": 7,
+      "in16_par_addr_var_output": 8,
+      "in16_par_cmd_output": 9,
+      "bool_par_cmd_read": 7,
+      "bool_par_cmd_interrupt": 15,
+      "in16_par_data_input": 30,
+      "in16_par_addr_input": 31,
+      "in16_par_status_input": 32,
+      "in16_par_time_input": 33
+    }
+  ]
+}
+
+  State Slave
+  {
+    "slave_state_datasets": [
+      {
+        "no": 0,
+        "name": "ui16_pwr_qlty_00",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 8,
+            "ui16_u_u2": 1,
+            "ui16_u_u0": 1,
+            "ui16_u_1_p": 1,
+            "ui16_u_2_p": 1,
+            "ui16_u_0_p": 1,
+            "ui16_f_10s": 1,
+            "ui16_u_dip_min": 1,
+            "ui16_u_swell_max": 1,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },
+      {
+        "no": 1,
+        "name": "ui16_pwr_qlty_01",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 19,
+            "ui16_i_L1_halfP_rms": 1,
+            "ui16_i_L2_halfP_rms": 1,
+            "ui16_i_L3_halfP_rms": 1,
+            "ui16_i_N_halfP_rms": 1,
+            "ui16_u_L1N_halfP_rms": 1,
+            "ui16_u_L2N_halfP_rms": 1,
+            "ui16_u_L3N_halfP_rms": 1,
+            "ui16_u_L1N_FU_halfP_rms": 1,
+            "ui16_u_L2N_FU_halfP_rms": 1,
+            "ui16_u_L3N_FU_halfP_rms": 1,
+            "in16_P_L1_halfP_av": 1,
+            "in16_P_L2_halfP_av": 1,
+            "in16_P_L3_halfP_av": 1,
+            "in16_Q_L1_halfP_av": 1,
+            "in16_Q_L2_halfP_av": 1,
+            "in16_Q_L3_halfP_av": 1,
+            "in16_S_L1_halfP_av": 1,
+            "in16_S_L2_halfP_av": 1,
+            "in16_S_L3_halfP_av": 1,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },
+      {
+        "no": 2,
+        "name": "ui16_pwr_qlty_02",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 76,
+            "ui16_i_L1_10P_rms": 1,
+            "ui16_i_L2_10P_rms": 1,
+            "ui16_i_L3_10P_rms": 1,
+            "ui16_i_N_10P_rms": 1,
+            "ui16_u_L1N_10P_rms": 1,
+            "ui16_u_L2N_10P_rms": 1,
+            "ui16_u_L3N_10P_rms": 1,
+            "ui16_u_L1N_FU_10P_rms": 1,
+            "ui16_u_L2N_FU_10P_rms": 1,
+            "ui16_u_L3N_FU_10P_rms": 1,
+            "in16_P_L1_10P_av": 1,
+            "in16_P_L2_10P_av": 1,
+            "ini16_P_L3_10P_av": 1,
+            "in16_Q_L1_10P_av": 1,
+            "in16_Q_L2_10P_av": 1,
+            "in16_Q_L3_10P_av": 1,
+            "in16_S_L1_10P_av": 1,
+            "in16_S_L2_10P_av": 1,
+            "in16_S_L3_10P_av": 1,
+            "ui16_i_L1_150P_rms": 1,
+            "ui16_i_L2_150P_rms": 1,
+            "ui16_i_L3_150P_rms": 1,
+            "ui16_i_N_150P_rms": 1,
+            "ui16_u_L1N_150P_rms": 1,
+            "ui16_u_L2N_150P_rms": 1,
+            "ui16_u_L3N_150P_rms": 1,
+            "ui16_u_L1N_FU_150P_rms": 1,
+            "ui16_u_L2N_FU_150P_rms": 1,
+            "ui16_u_L3N_FU_150P_rms": 1,
+            "in16_P_L1_150P_av": 1,
+            "in16_P_L2_150P_av": 1,
+            "in16_P_L3_150P_av": 1,
+            "in16_Q_L1_150P_av": 1,
+            "in16_Q_L2_150P_av": 1,
+            "in16_Q_L3_150P_av": 1,
+            "in16_S_L1_150P_av": 1,
+            "in16_S_L2_150P_av": 1,
+            "in16_S_L3_150P_av": 1,
+            "ui16_i_L1_10min_rms": 1,
+            "ui16_i_L2_10min_rms": 1,
+            "ui16_i_L3_10min_rms": 1,
+            "ui16_i_N_10min_rms": 1,
+            "ui16_u_L1N_10min_rms": 1,
+            "ui16_u_L2N_10min_rms": 1,
+            "ui16_u_L3N_10min_rms": 1,
+            "ui16_u_L1N_FU_10min_rms": 1,
+            "ui16_u_L2N_FU_10min_rms": 1,
+            "ui16_u_L3N_FU_10min_rms": 1,
+            "in16_P_L1_10min_av": 1,
+            "in16_P_L2_10min_av": 1,
+            "in16_P_L3_10min_av": 1,
+            "in16_Q_L1_10min_av": 1,
+            "in16_Q_L2_10min_av": 1,
+            "in16_Q_L3_10min_av": 1,
+            "in16_S_L1_10min_av": 1,
+            "in16_S_L2_10min_av": 1,
+            "in16_S_L3_10min_av": 1,
+            "ui16_i_L1_2h_rms": 1,
+            "ui16_i_L2_2h_rms": 1,
+            "ui16_i_L3_2h_rms": 1,
+            "ui16_i_N_2h_rms": 1,
+            "ui16_u_L1N_2h_rms": 1,
+            "ui16_u_L2N_2h_rms": 1,
+            "ui16_u_L3N_2h_rms": 1,
+            "ui16_u_L1N_FU_2h_rms": 1,
+            "ui16_u_L2N_FU_2h_rms": 1,
+            "ui16_u_L3N_FU_2h_rms": 1,
+            "in16_P_L1_2h_av": 1,
+            "in16_P_L2_2h_av": 1,
+            "in16_P_L3_2h_av": 1,
+            "in16_Q_L1_2h_av": 1,
+            "in16_Q_L2_2h_av": 1,
+            "in16_Q_L3_2h_av": 1,
+            "in16_S_L1_2h_av": 1,
+            "in16_S_L2_2h_av": 1,
+            "in16_S_L3_2h_av": 1,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },
+      {
+        "no": 3,
+        "name": "ui16_pwr_qlty_03",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 9,
+            "fl32_u_L1N_Pinst": 1,
+            "fl32_u_L2N_Pinst": 1,
+            "fl32_u_L3N_Pinst": 1,
+            "fl32_u_L1N_Pst": 1,
+            "fl32_u_L2N_Pst": 1,
+            "fl32_u_L3N_Pst": 1,
+            "fl32_u_L1N_Plt": 1,
+            "fl32_u_L2N_Plt": 1,
+            "fl32_u_L3N_Plt": 1,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },
+      {
+        "no": 4,
+        "name": "fl32_u_LxN_hx_harmonic",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 208,
+            "fl32_u_L1N_hx_group": 51,
+            "fl32_u_L2N_hx_group": 51,
+            "fl32_u_L3N_hx_group": 51,
+            "fl32_u_LNPE_hx_group": 51,
+            "fl32_u_LxN_THD": 4,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },
+      {
+        "no": 5,
+        "name": "fl32_i_Lx_hx_harmonic",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 208,
+            "fl32_i_L1_hx_group": 51,
+            "fl32_i_L2_hx_group": 51,
+            "fl32_i_L3_hx_group": 51,
+            "fl32_i_N_hx_group": 51,
+            "fl32_i_LxN_THD": 4,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },{
+        "no": 6,
+        "name": "fl32_u_LxN_ihx_harmonic",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 208,
+            "fl32_u_L1N_ihx_group": 51,
+            "fl32_u_L2N_ihx_group": 51,
+            "fl32_u_L3N_ihx_group": 51,
+            "fl32_u_LNPE_ihx_group": 51,
+            "fl32_spare": 4,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      },{
+        "no": 7,
+        "name": "fl32_i_Lx_ihx_harmonic",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 208,
+            "fl32_i_L1_ihx_group": 51,
+            "fl32_i_L2_ihx_group": 51,
+            "fl32_i_L3_ihx_group": 51,
+            "fl32_i_N_ihx_group": 51,
+            "fl32_spare": 4,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      }
+    ]
+  }

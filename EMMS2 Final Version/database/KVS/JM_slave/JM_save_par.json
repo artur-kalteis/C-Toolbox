@@ -1,0 +1,101 @@
+{
+    "slave_par_output": [
+      {
+        "in16_par_data_output": 1,
+        "in16_par_addr_output": 2,
+        "in16_par_cmd_output": 3,
+        "data": 0
+       
+      }
+    ],
+    "slave_par_datasets": [
+      {
+        "no": 0,
+        "in16_par_addr_var_output": 3,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 0,
+        "bool_par_cmd_interrupt": 8,
+        "in16_par_data_input": 10,
+        "in16_par_addr_input": 11,
+        "in16_par_status_input": 12,
+        "in16_par_time_input": 13
+      },
+      {
+        "no": 1,
+        "in16_par_addr_var_output": 4,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 1,
+        "bool_par_cmd_interrupt": 9,
+        "in16_par_data_input": 14,
+        "in16_par_addr_input": 15,
+        "in16_par_status_input": 16,
+        "in16_par_time_input": 17
+      },
+      {
+        "no": 2,
+        "in16_par_addr_var_output": 5,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 2,
+        "bool_par_cmd_interrupt": 10,
+        "in16_par_data_input": 18,
+        "in16_par_addr_input": 19,
+        "in16_par_status_input": 20,
+        "in16_par_time_input": 21
+      },
+      {
+        "no": 3,
+        "in16_par_addr_var_output": 6,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 3,
+        "bool_par_cmd_interrupt": 11,
+        "in16_par_data_input": 22,
+        "in16_par_addr_input": 23,
+        "in16_par_status_input": 24,
+        "in16_par_time_input": 25
+      },
+      {
+        "no": 4,
+        "in16_par_addr_var_output": 7,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 4,
+        "bool_par_cmd_interrupt": 12,
+        "in16_par_data_input": 26,
+        "in16_par_addr_input": 30,
+        "in16_par_status_input": 31,
+        "in16_par_time_input": 32
+      },
+      {
+        "no": 5,
+        "in16_par_addr_var_output": 7,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 5,
+        "bool_par_cmd_interrupt": 13,
+        "in16_par_data_input": 27,
+        "in16_par_addr_input": 30,
+        "in16_par_status_input": 31,
+        "in16_par_time_input": 32
+      },
+      {
+        "no": 6,
+        "in16_par_addr_var_output": 7,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 6,
+        "bool_par_cmd_interrupt": 14,
+        "in16_par_data_input": 28,
+        "in16_par_addr_input": 30,
+        "in16_par_status_input": 31,
+        "in16_par_time_input": 32
+      },
+      {
+        "no": 7,
+        "in16_par_addr_var_output": 7,
+        "in16_par_cmd_output": 8,
+        "bool_par_cmd_read": 7,
+        "bool_par_cmd_interrupt": 15,
+        "in16_par_data_input": 29,
+        "in16_par_addr_input": 30,
+        "in16_par_status_input": 31,
+        "in16_par_time_input": 32
+      }
+    ]
+  }

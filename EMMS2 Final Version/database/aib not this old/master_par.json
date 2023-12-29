@@ -1,0 +1,16 @@
+{
+    "slave_count": 1,
+    "slave_topology": [
+      {
+        "in16_slave_serial": "measurement_board_1",
+        "in16_par_slave_position": 1,
+        "char_par_slave_name": "AB1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 30,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 1
+      }
+    ]
+  }

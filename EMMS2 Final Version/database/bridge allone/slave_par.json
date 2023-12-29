@@ -1,0 +1,20 @@
+{
+"beckhoff_ana_out_data": 17,
+"fl32_f_ref": 1,
+"fl32_U_re_pos_ref": 1,
+"fl32_U_im_pos_ref": 1,
+"fl32_U_re_neg_ref": 1,
+"fl32_U_im_neg_ref": 1,
+"fl32_U_re_zero_ref": 1,
+"fl32_U_im_zero_ref": 1,
+"fl32_P_pos_ref": 1,
+"fl32_Q_pos_ref": 1,
+"fl32_P_neg_ref": 1,
+"fl32_Q_neg_ref": 1,
+"fl32_P_zero_ref": 1,
+"fl32_Q_zero_ref": 1,
+"fl32_P_Bat_ref": 1,
+"fl32_P_Ext_ref": 1,
+"fl32_cmd_0": 1,
+"fl32_cmd_1": 1
+}

@@ -1,0 +1,23 @@
+{
+    "slave_par_output": [
+      {
+        "in16_par_data_output": 0,
+        "in16_par_addr_output": 0,
+        "in16_par_cmd_output": 7,
+        "data": 0
+      }
+    ],
+    "slave_par_datasets": [
+      {
+        "no": 0,
+        "in16_par_addr_var_output": 3,
+        "in16_par_cmd_output": 6,
+        "bool_par_cmd_read": 5,
+        "bool_par_cmd_interrupt": 13,
+        "in16_par_data_input": 12,
+        "in16_par_addr_input": 15,
+        "in16_par_status_input": 16,
+        "in16_par_time_input": 17
+      }
+    ]
+  }

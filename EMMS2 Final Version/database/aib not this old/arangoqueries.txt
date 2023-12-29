@@ -1,0 +1,63 @@
+ALL master attributes
+/*For a in app
+Filter a.name == "Ethercat_Master"
+For sp IN ANY a belongs_to OPTIONS {bfs: true, uniqueVertices: 'global'}
+return sp._id*/
+
+
+ALL slave attributes
+/*For d in device
+    Filter d.ethercat_slave == true
+    
+    For sp IN ANY d belongs_to OPTIONS {bfs: true, uniqueVertices: 'global'}
+        return {"device_id":d.name, "attribute_id":sp._id}*/
+
+ALL slave ids
+/*For d in device
+    Filter d.ethercat_slave == true
+    return d._id*/
+  
+ALL attributes for induvidual slave device id   
+/*For sp IN ANY "device/2080143" belongs_to OPTIONS {bfs: true, uniqueVertices: 'global'}
+    return sp._id*/
+
+
+Master cmd document        
+/*For a in app
+Filter a.name == "Ethercat_Master"
+For sp IN ANY a belongs_to OPTIONS {bfs: true, uniqueVertices: 'global'}
+Filter IS_SAME_COLLECTION("cmd",sp._id)
+return sp*/
+
+
+Master sts document        
+/*For a in app
+Filter a.name == "Ethercat_Master"
+For sp IN ANY a belongs_to OPTIONS {bfs: true, uniqueVertices: 'global'}
+Filter IS_SAME_COLLECTION("sts",sp._id)
+return sp*/
+
+
+For d in par
+    Filter d.name == "master"
+    return d
+
+
+
+
+For a in device
+Filter a.type == "controller"
+for b in inbound a included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+Filter IS_SAME_COLLECTION("interface", b._id)
+For sp IN outbound b included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+for sp1 in outbound sp included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+for sp2 in inbound sp1 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+
+For sp3 IN outbound sp2 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+for sp4 in outbound sp3 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+for sp5 in inbound sp4 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+
+For sp6 IN outbound sp5 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+for sp7 in outbound sp6 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+for sp8 in inbound sp7 included_in OPTIONS {bfs: true, uniqueVertices: 'global'}
+limit 1 return {"1":sp1._id ,"2":sp4._id ,"3":sp7._id}

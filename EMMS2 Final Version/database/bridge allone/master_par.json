@@ -1,0 +1,16 @@
+{
+    "slave_count": 1,
+    "slave_topology": [
+      {
+        "in16_slave_serial": "bridge_01",
+        "in16_par_slave_position": 1,
+        "char_par_slave_name": "EL6692",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 40,
+        "in16_par_ana_out": 17,
+        "bool_par_serialized": false,
+        "in16_par_slave_datasets": 0
+      }
+    ]
+  }

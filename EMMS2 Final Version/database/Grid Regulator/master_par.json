@@ -1,0 +1,83 @@
+{
+    "slave_count": 7,
+    "slave_topology": [
+      {
+        "in16_slave_serial": "bridge_01",
+        "in16_par_slave_position": 1,
+        "char_par_slave_name": "EL6692",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 40,
+        "in16_par_ana_out": 17,
+        "bool_par_serialized": false,
+        "in16_par_slave_datasets": 0
+      },
+      {
+        "in16_slave_serial": "JM1001_01",
+        "in16_par_slave_position": 2,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 8
+      },
+      {
+        "in16_slave_serial": "JM1001_02",
+        "in16_par_slave_position": 3,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 8
+      },
+      {
+        "in16_slave_serial": "JM1001_03",
+        "in16_par_slave_position": 4,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 8
+      },
+      {
+        "in16_slave_serial": "JM1001_04",
+        "in16_par_slave_position": 5,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 8
+      },
+      {
+        "in16_slave_serial": "JM1001_05",
+        "in16_par_slave_position": 6,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 8
+      },
+      {
+        "in16_slave_serial": "JM1001_06",
+        "in16_par_slave_position": 7,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 8
+      }
+    
+    ]
+  }

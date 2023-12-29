@@ -1,0 +1,177 @@
+//Erstellt von Artur Kalteis
+//am 10.01.2018
+//artur.kalteis@gmx.net
+//JSON-Objekte für den IgH Ethercat Master unter Linux.
+//Version 1
+
+
+/*App*/
+{
+    "char_name":"igh_m_1",
+    "char_type":"ecat_master",
+    "char_position":"top"
+}
+       
+/*CMD*/
+/*Nur ein Topologie-Objekt (statisch)*/
+/*Nur ein Master-Objekt (statisch)*/
+{
+    "char_name":"igh_m_1",
+    "char_type":"ecat_master",
+    "char_position":"top",
+
+    "ui16_cmd_topology_state": 1,
+    "ui16_cmd_master_state": 1,
+
+    "bool_cmd_topology_start": false,
+    "bool_cmd_topology_on": false,
+    "bool_cmd_topology_off": true,
+    "bool_cmd_topology_pause": false,
+    "bool_cmd_topology_sleep": false,
+    "bool_cmd_topology_standby": false,
+    "bool_cmd_topology_reset": false,
+
+    "bool_cmd_master_start": false,
+    "bool_cmd_master_on": false,
+    "bool_cmd_master_off": true,
+    "bool_cmd_master_pause": false,
+    "bool_cmd_master_sleep": false,
+    "bool_cmd_master_standby": false,
+    "bool_cmd_master_reset": false
+}
+
+/*status (sts)*/
+/*Nur ein Topologie-Objekt (statisch)*/
+/*Nur ein Master-Objekt (statisch)*/
+{
+    "char_name": "igh_m_1",
+    "char_type": "ecat_master",
+    "char_position": "top",
+    "ui16_sts_topology_state": 1,
+    "ui16_sts_master_state": 1,
+    "bool_sts_master_start": true,
+    "bool_sts_master_on": true,
+    "bool_sts_master_off": true,
+    "bool_sts_master_pause": false,
+    "bool_sts_master_sleep": false,
+    "bool_sts_master_standby": false,
+    "bool_sts_master_reset": true,
+    "bool_sts_topology_start": false,
+    "bool_sts_topology_on": false,
+    "bool_sts_topology_off": true,
+    "bool_sts_topology_pause": false,
+    "bool_sts_topology_sleep": false,
+    "bool_sts_topology_standby": false,
+    "bool_sts_topology_reset": false
+  }
+
+
+  
+/*Files*/
+/*wird vom Shell-Script benötigt um die Header zu erstellen*/
+{
+    
+    "char_name":"igh_m_1",
+    "char_type":"ecat_master",
+    "char_position":"top"
+
+    "char_file_path": "/user/local/ecat/",
+
+    "char_ethercat_topologie_manager":"srv/topologie.sh",
+
+    "char_ethercat_master_src":"src/master.c",
+    "char_influxdb_uploader_src":"src/influx_uploader.c",
+    "char_ethercat_controller_src":"src/controller.c",
+    "char_arangodb_parser_src":"src/arango_parser.c",
+
+    "char_ethercat_master":"bin/master",
+    "char_influxdb_uploader":"bin/influx_uploader",
+    "char_ethercat_controller":"bin/controller",
+    "char_arangodb_parser":"bin/arango_parser",
+
+    "char_shared_memory_header":"include/shared_memory.h",
+    "char_process_data_object_header":"include/pdo.h",
+    "char_slave_info_header":"include/slave.h",
+    "char_shared_memory_header":"include/shared_memory.h",
+    "char_igh_domain_registration":"include/reg.h",
+
+}
+
+
+/*Parameter*/
+/*wird über ein Shellscript ausgelesen (dynamisch)*/
+{
+    "slave_count": 1,
+    "slave_topology": [
+      {
+        "in16_slave_id": "jm_01",
+        "in16_par_slave_position": 1,
+        "char_par_slave_name": "JM1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 36,
+        "in16_par_ana_out": 11,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 2
+      }
+    ]
+  }
+
+
+
+/*user*/
+
+{
+    "char_name":"kalteis",
+    "char_address":"fh-soest",
+    "char_email":"artur.kalties@gmx.net",
+    "ui16_rights": 1,
+}
+
+
+                        
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

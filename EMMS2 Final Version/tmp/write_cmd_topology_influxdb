@@ -1,0 +1,1 @@
+curl -i -XPOST --user 'root:sgcdm2017' 'http://192.168.72.139:8086/write?db=ecat_master' --data-binary 'topology_cmd_statemachine int_cmd_topology=0,bool_cmd_topology_start=1,bool_cmd_topology_standby=0,bool_cmd_topology_sleep=0,bool_cmd_topology_reset=0,bool_cmd_topology_pause=0,bool_cmd_topology_on=0,bool_cmd_topology_off=0'

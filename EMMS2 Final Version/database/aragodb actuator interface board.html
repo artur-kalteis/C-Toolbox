@@ -1,0 +1,79 @@
+Parameter Master
+
+
+{
+    "slave_count": 1,
+    "slave_topology": [
+      {
+        "in16_slave_id": "measurement_board",
+        "in16_par_slave_position": 1,
+        "char_par_slave_name": "AB1001",
+        "in16_par_dig_in": 0,
+        "in16_par_dig_out": 0,
+        "in16_par_ana_in": 30,
+        "in16_par_ana_out": 10,
+        "bool_par_serialized": true,
+        "in16_par_slave_datasets": 1
+      }
+    ]
+  }
+
+
+  Parameter Slave 
+
+
+  {
+    "slave_par_datasets": [
+      {
+        "no": 0,
+        "in16_par_addr_var_output": 3,
+        "in16_par_cmd_output": 6,
+        "bool_par_cmd_read": 5,
+        "bool_par_cmd_interrupt": 13,
+        "in16_par_data_input": 12,
+        "in16_par_addr_input": 15,
+        "in16_par_status_input": 16,
+        "in16_par_time_input": 17
+      }
+    ]
+  }
+
+
+  State slave 
+
+
+  {
+    "slave_state_datasets": [
+      {
+        "no": 0,
+        "name": "fl32_sync_1_data",
+        "interrupt_time": 2,
+        "timestamp": 1,
+        "dataset_input": [
+          {
+            "data": 11,
+            "fl32_alpha_1": 1,
+            "fl32_f_1": 1,
+            "fl32_u_1_pos_mag": 1,
+            "fl32_u_1_pos_Re": 1,
+            "fl32_u_1_pos_iM": 1,
+            "fl32_u_1_neg_mag": 1,
+            "fl32_u_1_neg_Re": 1,
+            "fl32_u_1_neg_Im": 1,
+            "fl32_u_1_zero_mag": 1,
+            "fl32_u_1_zero_Re": 1,
+            "fl32_u_1_zero_Im": 1,
+            "status": 8,
+            "bool_u_dip": 1,
+            "bool_u_interrupt": 1,
+            "bool_u_swell": 1,
+            "bool_u_marked": 1,
+            "bool_f_marked": 1,
+            "bool_pwr_qual_00_dvalid": 1,
+            "bool_pwr_qual_00_valid": 1,
+            "bool_pwr_qual_00_interrupt": 1
+          }
+        ]
+      }
+    ]
+  }

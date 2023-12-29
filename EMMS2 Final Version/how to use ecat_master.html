@@ -1,0 +1,75 @@
+1) Working folder is /root/ethercat/EMMS2        (EMMS2= Ethercat Measurement Management System 2)
+#------------------------------------------------------------------------------------------------------#
+2) Make sure that you can execute all scripts with:
+    $chmod -R 777 EMMS2
+#------------------------------------------------------------------------------------------------------#
+3) Start the Topology Manager:
+    $./TM.sh
+The TM.sh script will run from now in the background, don't touch it anymore
+#------------------------------------------------------------------------------------------------------#
+4) Start the Topology Controler
+    $./TC.sh 
+
+        start
+        1) t_start
+        2) t_state=4
+        3) m_state=2
+
+        close
+        1) m_state=3
+        2) t_off
+
+    
+#------------------------------------------------------------------------------------------------------#    
+
+
+
+
+
+
+
+#---------------Topology State Machine--------------#
+
+topology_status 1=standby
+topology_status 2=topology match
+topology_status 3=topology not match
+topology_status 4=compile the master
+topology_status 5=update(dont use this)
+topology_status 6=compiling done
+topology_status 7=compiling error
+
+#---------------Master State Machine-----------------#
+master_staus    1=preop
+master_staus    2=op
+master_staus    3=close the master
+
+
+
+
+
+
+
+
+if the Master crashed, check the following
+
+$service ethercat restart
+
+# check if there are lost shared memory
+
+$ ipcs -m
+
+# a restart should solve it!
+
+#check if the master or controler are still running in the background
+
+$ps -aux | grep ecat_master
+
+$ps -aux | grep control
+
+# Kill the process
+
+$kill -9 ${id}
+
+
+
+

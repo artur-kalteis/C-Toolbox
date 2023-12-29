@@ -1,0 +1,10 @@
+{
+    "slave_par_status": 7,
+    "bool_sync_fb_status_open": false,
+    "bool_sync_fb_status_close": false,
+    "bool_sync_fb_status_alpha": false,
+    "bool_sync_fb_status_f": false,
+    "bool_sync_fb_status_pos_mag": false,
+    "bool_sync_fb_status_neg_mag": false,
+    "bool_sync_fb_status_zero_mag": false
+  }

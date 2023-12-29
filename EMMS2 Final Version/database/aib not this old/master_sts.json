@@ -1,0 +1,21 @@
+{
+    "char_name": "igh_m_1",
+    "char_type": "ecat_master",
+    "char_position": "top",
+    "ui16_sts_topology_state": 1,
+    "ui16_sts_master_state": 1,
+    "bool_sts_master_start": true,
+    "bool_sts_master_on": true,
+    "bool_sts_master_off": true,
+    "bool_sts_master_pause": false,
+    "bool_sts_master_sleep": false,
+    "bool_sts_master_standby": false,
+    "bool_sts_master_reset": true,
+    "bool_sts_topology_start": false,
+    "bool_sts_topology_on": false,
+    "bool_sts_topology_off": true,
+    "bool_sts_topology_pause": false,
+    "bool_sts_topology_sleep": false,
+    "bool_sts_topology_standby": false,
+    "bool_sts_topology_reset": false
+  }
